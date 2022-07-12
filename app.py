@@ -1,5 +1,5 @@
 from flask import Flask,render_template, url_for, request
-app = Flask(__name__, template_folder='/home/pi/pt/app_html/templates')
+app = Flask(__name__)
 
 @app.route('/')
 @app.route('/home')
@@ -15,5 +15,5 @@ def result():
     return render_template('index.html', name = name)
     
 
-if __name__ == "__main__":
-    app.run()
+#if __name__ == "__main__":
+#    app.run()
